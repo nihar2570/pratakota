@@ -12,20 +12,24 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Africa</title>
+    <title>Premidis</title>
   </head>
   <body>
     <!-- Navbar -->
-    <div class="container px-5 py-2">
+    <div class="container-fluid my-3 p-2">
       <nav
-        class="navbar navbar-expand-lg navbar-light animate__animated animate__fadeIn animate__delay-1s"
+        class="navbar shadow fixed-top navbar-expand-lg navbar-light animate__animated animate__fadeIn animate__delay-1s"
+        style="background-image: url('images/mesh-28.png')"
       >
-        <div class="container-fluid">
-          <a class="navbar-brand fs-4" href="#">Africa </a>
+        <div class="container">
+          <a class="navbar-brand ms-auto mb-2 mb-lg-0 fs-4 text-white" href="#"
+            >Premidis Sarl
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -40,13 +44,16 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link fs-5" href="#">PRESENCE</a>
+                <a class="nav-link fs-5 text-white" href="#presence">Presence</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="#">LEADERSHIP</a>
+                <a class="nav-link fs-5 text-white" href="#leadership">Leadership</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="#">CONTACT</a>
+                <a class="nav-link fs-5 text-white" href="#mission">Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 text-white" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -55,8 +62,16 @@
     </div>
 
     <!-- Art-->
-    <section class="py-5">
-      <div class="container py-5">
+    <section class="py-2">
+      <div
+        class="container py-5 my-5"
+        style="
+          text-shadow: 1px 1px 4px #cccccc;
+          background-image: url('images/');
+          background-repeat: no-repeat;
+          background-size: auto;
+        "
+      >
         <div class="row text-center align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-1">
             <h1
@@ -68,23 +83,25 @@
             <h1
               class="display-6 animate__animated animate__fadeInLeft animate__delay-1s"
             >
-              Reshaping the future of Africa
+              Reshaping the future of Africa.
             </h1>
           </div>
           <!--  -->
-          <div class="col-12 col-md-7 col-lg-6 order-md-2 animate__animated animate__fadeInRight animate__delay">
-            <object
-              id="svg"
-              data="images/undraw_team_collaboration_re_ow29.svg"
-              width="100%"
-            ></object>
+          <div
+            class="col-12 col-md-7 col-lg-6 order-md-2 animate__animated animate__fadeInRight animate__delay"
+          >
+            <img
+              id="artsvg"
+              src="images/undraw_team_collaboration_re_ow29.svg"
+              class="img-fluid"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <!-- Our Presence-->
-    <section class="p-5">
+    <section class="p-5" id="presence" >
       <div
         class="container animate__animated animate__fadeInUp animate__delay-2s"
       >
@@ -97,8 +114,8 @@
             <div
               class="card text-white shadow-sm border-light p-4"
               style="
-                background: linear-gradient(90deg, #aff57a, #54d169);
                 text-shadow: 1px 1px 4px #cccccc;
+                background-image: url('images/1.png');
               "
             >
               <div class="row text-center g-0">
@@ -330,7 +347,7 @@
     </section>
 
     <!--About Us-->
-    <section class="p-5">
+    <section class="p-5" id="leadership" >
       <div class="container text-center">
         <hr />
         <h1 class="display-4 text-center py-5">
@@ -348,8 +365,8 @@
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">John Doe</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Founder / CEO</h6>
+                <h5 class="card-title">Siva Prasad Reddy</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Founder</h6>
                 <p class="card-text">
                   I am an ambitious workaholic, but apart from that, pretty
                   simple person.
@@ -368,8 +385,8 @@
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">John Doe</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Founder / CEO</h6>
+                <h5 class="card-title">Bhavanam Srinivasa Rao</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Partner</h6>
                 <p class="card-text">
                   I am an ambitious workaholic, but apart from that, pretty
                   simple person.
@@ -388,8 +405,8 @@
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">John Doe</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Founder / CEO</h6>
+                <h5 class="card-title">Munnangi Sitaramananeya</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Partner</h6>
                 <p class="card-text">
                   I am an ambitious workaholic, but apart from that, pretty
                   simple person.
@@ -408,8 +425,8 @@
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title">John Doe</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Founder / CEO</h6>
+                <h5 class="card-title">Muktesh Reddy</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Director</h6>
                 <p class="card-text">
                   I am an ambitious workaholic, but apart from that, pretty
                   simple person.
@@ -420,7 +437,94 @@
         </div>
       </div>
     </section>
-    <!-- End Row -->
+
+    <!--Mission-->>
+    <section class="p-5" id="mission">
+      <div class="container text-center">
+        <hr />
+        <h1 class="display-4 text-center py-5">
+          Our <span class="text-primary">Mission</span>
+        </h1>
+        <div class="row gx-3 mb-5">
+          <div class="col-sm-6 col-lg-3 mb-3">
+            <div class="card border-light shadow-sm">
+              <div class="card-img-top">
+                <img
+                  class="avatar-img p-1"
+                  src="images/employees.png"
+                  style="width: 15vh"
+                  alt="Image Description"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Job Creation</h5>
+                <p class="card-text">
+                  Premidis has a permanent staff estimated at 360 people not
+                  including 500 day laborers that are employed every month.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-3">
+            <div class="card border-light shadow-sm">
+              <div class="card-img-top">
+                <img
+                  class="avatar-img p-1"
+                  src="images/food.png"
+                  style="width: 15vh"
+                  alt="Image Description"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Food Security</h5>
+                <p class="card-text">
+                  The AVI KIVU project supplies its customers with broiler
+                  chickens, locally produced eggs and chicks on a large scale.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-3">
+            <div class="card border-light shadow-sm">
+              <div class="card-img-top">
+                <img
+                  class="avatar-img p-1"
+                  src="images/student.png"
+                  style="width: 15vh"
+                  alt="Image Description"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Education</h5>
+                <p class="card-text">
+                  Premidis actions aim to provide assistance for the education
+                  and skill-development of pupils and students in North Kivu.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-3">
+            <div class="card border-light shadow-sm">
+              <div class="card-img-top">
+                <img
+                  class="avatar-img p-1"
+                  src="images/healthcare.png"
+                  style="width: 15vh"
+                  alt="Image Description"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Health</h5>
+                <p class="card-text">
+                  Premidis company took the initiative to provide the population
+                  of North Kivu with pure water suitable for consumption
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonials-->
     <section class="py-5">
@@ -482,12 +586,20 @@
     </section>
 
     <!-- Contact Us-->
-    <section class="p-5">
+    <section class="p-5" id="contact" >
       <div class="container">
         <hr />
         <h1 class="display-4 text-center py-5">
           <span class="text-primary">Contact </span>Us
         </h1>
+        <div class="row text-center pb-5 fs-4 font-monospace">
+          <div class="col-xs-12 col-md-6 col-lg-4">SIMBA SOLUTIONS</div>
+          <div class="col-xs-12 col-md-6 col-lg-4">PREMIDIS LOGISTIC</div>
+          <div class="col-xs-12 col-md-6 col-lg-4">BALAJI AGRO</div>
+          <div class="col-xs-12 col-md-6 col-lg-4"> MUKTA IMPEX</div>
+          <div class="col-xs-12 col-md-6 col-lg-4">SGC CONSTRUCTION</div>
+          <div class="col-xs-12 col-md-6 col-lg-4">REDDY NIMPEX</div>
+        </div>
         <div class="row justify-content-center">
           <div class="col-xs-12 col-md-12 col-lg-6">
             <div class="ratio ratio-16x9">
@@ -505,13 +617,21 @@
           </div>
           <div class="col-xs-12 col-md-12 col-lg-6">
             <ul class="list-group list-group-flush fs-5 font-monospace">
-              <li class="list-group-item">Africa</li>
-              <li class="list-group-item">Phone : +1 986-192-7211</li>
-              <li class="list-group-item">Fax : +1 984-492-7211</li>
-              <li class="list-group-item">Email : africa@gmail.com</li>
+              <li class="list-group-item">Premidis Sarl</li>
               <li class="list-group-item">
-                Address: #12 ,xyz street, lubumbashi, africa. pin : 929202
+                Phone : (+243) 997601556/ 993920200/ 810939000
               </li>
+              <li class="list-group-item">Email : secretary@premidis.com</li>
+              <li class="list-group-item">
+                Bank Reference : 1272-2301192-01-48 (TMB)
+              </li>
+              <li class="list-group-item">
+                Address: Route Aéroport n⁰20, Q/BUJOVU, Commune de KARISIMBI,
+                Ville de GOMA, Province du Nord-Kivu
+              </li>
+              <li class="list-group-item p-2 text-center"><a href="images/Premidis..pdf" download>
+                <button type="button" class="btn btn-outline-primary">Download Brochure</button>
+</li>
             </ul>
           </div>
         </div>
